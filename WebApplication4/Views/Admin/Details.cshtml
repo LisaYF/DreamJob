@@ -1,0 +1,43 @@
+﻿@model WebApplication4.Models.Teacher
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="container">
+    <h2>Details</h2>
+
+    <div>
+        <h4>Teacher</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Tname)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Tname)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Tbatch)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Tbatch)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Tsubject)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Tsubject)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

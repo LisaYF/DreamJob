@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "JavaTest1";
+}
+<head>
+    <title>Here is JavaTest1</title>
+
+    <script type="text/javascript">
+        function doit() {
+            var a = 0;
+            a = "Your anwser is:" + "\n" + $("input[name='javatest11']:checked").val()
+                + "\n" + $("input[name='javatest12']:checked").val() + "\n"
+                + $("input[name='javatest13']:checked").val() + "\n" +
+                $("input[name='javatest14']:checked").val() + "\n"
+                + $("input[name='javatest15']:checked").val()
+            alert(a);
+        }
+    </script>
+
+    </head>
+<body>
+    <img src="~/images/Choose.png" height="100%" width="100%" style="position:absolute;z-index:-1000;opacity:0.5;" />
+    <div class="container">
+        <br /><br /><br />
+        <p>1.Which kind of job would you like to choose().</p>
+        <input id="javatest11" name="javatest11" type="radio" value="1.Full-Time Job" /> A. Full-Time Job  <br />
+        <input id="javatest11" name="javatest11" type="radio" value="1.Part-Time Job" />  B. Part-Time Job<br />
+
+        <p>2.How much of the salay( ).</p>
+        <input id="javatest12" name="javatest12" type="radio" value="2.3000" /> A.3000 <br />
+        <input id="javatest12" name="javatest12" type="radio" value="2.5000" />  B.5000<br />
+        <input id="javatest12" name="javatest12" type="radio" value="2.7000" /> C.7000<br />
+        <input id="javatest12" name="javatest12" type="radio" value="2.10000" /> D.10000 <br />
+        <p>3.How many hours do you expect(   ).</p>
+        <input id="javatest13" name="javatest13" type="radio" value="3.4 h" /> A.4 h<br />
+        <input id="javatest13" name="javatest13" type="radio" value="3.6 h" />  B. 6 h<br />
+        <input id="javatest13" name="javatest13" type="radio" value="3.8 h" /> C. 8 h<br />
+        <input id="javatest13" name="javatest13" type="radio" value="3.10 h" /> D.10 h<br />
+        <p>4.What's your ideal working city( ).</p>
+        <input id="javatest14" name="javatest14" type="radio" value="4.Shanghai" /> A.Shanghai  <br />
+        <input id="javatest14" name="javatest14" type="radio" value="4.Beijing" />  B.Beijing<br />
+        <input id="javatest14" name="javatest14" type="radio" value="4.Hangzhou" />C. Hangzhou <br />
+        <input id="javatest14" name="javatest14" type="radio" value="4.Shenzhen" /> D.Shenzhen<br />
+
+        <p>5.What's your expected days of your holiday( )</p>
+        <input id="javatest15" name="javatest15" type="radio" value="5.2days per week" /> A.2days per week<br />
+        <input id="javatest15" name="javatest15" type="radio" value="5.4days per mounth" />  B.4days per mounth<br />
+        <input id="javatest15" name="javatest15" type="radio" value="5.30days per year" />C.30days per year<br />
+
+
+        <input type="button" onclick="doit()" value="Submit">
+    </div>
+</body>

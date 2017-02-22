@@ -1,0 +1,135 @@
+﻿html, body {
+    height: 100%;
+    margin: 0px;
+}
+
+#myCarousel {
+    height: 100%;
+}
+.cover-heading{
+    font-size:60px;
+}
+.index-button {
+    position: fixed;
+    top: 80%;
+    left: 30%;
+    height: 20%;
+}
+
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.cover{
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    padding: 0 20px;
+    width:100%;
+    color:#fff;
+    position:fixed;
+    top:28%;
+}
+form, .carousel-inner, .carousel-inner .item {
+    height: 100%;
+}
+.inner {
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    z-index: 1001;
+    padding: 2px 30px 0px 30px;
+}
+#logoutForm{
+    margin-left:15px;
+}
+.masthead {
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(0,0,0,.5);
+      background-color:rgba(0,0,0,0.8);
+      z-index:1001;
+}
+@media (min-width: 768px) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%;
+    }
+}
+.modelcover{
+    position:fixed;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color:rgba(0,0,0,0.3);
+}
+.masthead-brand {
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+    display: inline-block;
+}
+
+    .masthead-nav > li + li {
+        margin-left: 20px;
+    }
+
+    .masthead-nav > li > a {
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff; /* IE8 proofing */
+        color: rgba(255,255,255,.75);
+        border-bottom: 2px solid transparent;
+    }
+
+        .masthead-nav > li > a:hover,
+        .masthead-nav > li > a:focus {
+            background-color: transparent;
+            border-bottom-color: #a9a9a9;
+            border-bottom-color: rgba(255,255,255,.25);
+        }
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .masthead-brand {
+        color:#fff;
+        font-size:25px;
+        float: left;
+    }
+
+    .masthead-nav {
+        float: right;
+    }
+}

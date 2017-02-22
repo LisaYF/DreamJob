@@ -1,0 +1,55 @@
+﻿@model WebApplication4.Models.Teacher
+
+@{
+    ViewBag.Title = "Edit";
+}
+<div class="container">
+
+    <h2>Edit</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>Teacher</h4>
+            <hr />
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(model => model.ID)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tname, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Tname)
+                    @Html.ValidationMessageFor(model => model.Tname)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tbatch, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Tbatch)
+                    @Html.ValidationMessageFor(model => model.Tbatch)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tsubject, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Tsubject)
+                    @Html.ValidationMessageFor(model => model.Tsubject)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Save" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</div>

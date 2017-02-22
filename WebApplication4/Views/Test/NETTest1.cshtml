@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "NETTest1";
+}
+
+
+
+<head>
+    <title>Here is NETTest1</title>
+
+    <script type="text/javascript">
+        function doit() {
+            var a = 0;
+            a = "Your Score is:" + "\n" + $("input[name='javatest11']:checked").val() + "\n" + $("input[name='javatest12']:checked").val() + "\n" + $("input[name='javatest13']:checked").val() + "\n" + $("input[name='javatest14']:checked").val() + "\n" + $("input[name='javatest15']:checked").val()
+            alert(a);
+        }
+    </script>
+
+</head>
+<body>
+    <br /><br /><br />
+    <p>1.编译Java  Application 源程序文件将产生相应的字节码文件,这些字节码文件的扩展名为().</p>
+    <input id="javatest11" name="javatest11" type="radio" value="1.False" /> A. java  <br />
+    <input id="javatest11" name="javatest11" type="radio" value="1.True" />  B. class<br />
+    <input id="javatest11" name="javatest11" type="radio" value="1.False" /> C. html <br />
+    <input id="javatest11" name="javatest11" type="radio" value="1.False" /> D. exe   <br />
+
+    <p>2.设 x = 1 , y = 2 , z = 3,则表达式  y＋＝z－－/＋＋x  的值是( ).</p>
+    <input id="javatest12" name="javatest12" type="radio" value="2.True" /> A.3 <br />
+    <input id="javatest12" name="javatest12" type="radio" value="2.False" />  B.3.5<br />
+    <input id="javatest12" name="javatest12" type="radio" value="2.False" /> C. 4 <br />
+    <input id="javatest12" name="javatest12" type="radio" value="2.False" /> D. 5  <br />
+    <p>3.不允许作为类及类成员的访问控制符的是(   ).</p>
+    <input id="javatest13" name="javatest13" type="radio" value="3.False" /> A. public <br />
+    <input id="javatest13" name="javatest13" type="radio" value="3.True" />  B. private<br />
+    <input id="javatest13" name="javatest13" type="radio" value="3.False" /> C. static  <br />
+    <input id="javatest13" name="javatest13" type="radio" value="3.False" /> D. protected  <br />
+    <p>4.为AB类的一个无形式参数无返回值的方法method书写方法头,使得使用类名AB作为前缀就可以调用它,该方法头的形式为( ).</p>
+    <input id="javatest14" name="javatest14" type="radio" value="4.True" /> A. static void method( )  <br />
+    <input id="javatest14" name="javatest14" type="radio" value="4.False" />  B. public void method( )<br />
+    <input id="javatest14" name="javatest14" type="radio" value="4.False" />C. final void method( )  <br />
+    <input id="javatest14" name="javatest14" type="radio" value="4.False" /> D. abstract void method( ) <br />
+
+    <p>5.Java application中的主类需包含main方法,以下哪项是main方法的正确形参?( )</p>
+    <input id="javatest15" name="javatest15" type="radio" value="5.False" /> A. String  args <br />
+    <input id="javatest15" name="javatest15" type="radio" value="5.True" />  B.String  args[]<br />
+    <input id="javatest15" name="javatest15" type="radio" value="5.False" />C.Char  arg <br />
+    <input id="javatest15" name="javatest15" type="radio" value="5.False" /> D.StringBuffer args[] <br />
+
+
+    <input type="button" onclick="doit()" value="click">
+</body>

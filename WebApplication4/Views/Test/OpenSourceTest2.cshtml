@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "OpenSourceTest2";
+}
+
+<head>
+    <title>Here is OpenSourceTest2</title>
+
+    <script type="text/javascript">
+        function doit() {
+            var a = 0;
+            a = "Your Score is:" + "\n" + $("input[name='javatest11']:checked").val() + "\n" + $("input[name='javatest12']:checked").val() + "\n" + $("input[name='javatest13']:checked").val() + "\n" + $("input[name='javatest14']:checked").val() + "\n" + $("input[name='javatest15']:checked").val()
+            alert(a);
+        }
+    </script>
+
+</head>
+<body>
+    <br /><br /><br />
+    <p>1.paint()方法使用哪种类型的参数? (  )</p>
+    <input id="javatest11" name="javatest11" type="radio" value="1.True" /> A.Graphics  <br />
+    <input id="javatest11" name="javatest11" type="radio" value="1.False" />  B.Graphics2D<br />
+    <input id="javatest11" name="javatest11" type="radio" value="1.False" /> C.String <br />
+    <input id="javatest11" name="javatest11" type="radio" value="1.False" /> D.Color   <br />
+
+    <p>2.以下哪个不是Java的原始数据类型(  )</p>
+    <input id="javatest12" name="javatest12" type="radio" value="2.Flase" /> A.int <br />
+    <input id="javatest12" name="javatest12" type="radio" value="2.True" />  B.Boolean<br />
+    <input id="javatest12" name="javatest12" type="radio" value="2.False" /> C. float <br />
+    <input id="javatest12" name="javatest12" type="radio" value="2.False" /> D. char  <br />
+    <p>3.以下哪项可能包含菜单条(	).</p>
+    <input id="javatest13" name="javatest13" type="radio" value="3.False" /> A. Panel <br />
+    <input id="javatest13" name="javatest13" type="radio" value="3.False" />  B. Frame<br />
+    <input id="javatest13" name="javatest13" type="radio" value="3.False" /> C. Applet  <br />
+    <input id="javatest13" name="javatest13" type="radio" value="3.True " /> D. Dialog <br />
+    <p>4.若需要定义一个类域或类方法,应使用哪种修饰符?(  )</p>
+    <input id="javatest14" name="javatest14" type="radio" value="4.False" /> A.static  <br />
+    <input id="javatest14" name="javatest14" type="radio" value="4.True" />  B.package<br />
+    <input id="javatest14" name="javatest14" type="radio" value="4.False" />C.private  <br />
+    <input id="javatest14" name="javatest14" type="radio" value="4.False" /> D.public <br />
+
+    <p>5..在浏览器中执行applet 程序,以下选项中的哪个方法将被最先执行(  ).</p>
+    <input id="javatest15" name="javatest15" type="radio" value="5.False" /> A.init() <br />
+    <input id="javatest15" name="javatest15" type="radio" value="5.True" />  B.start() <br />
+    <input id="javatest15" name="javatest15" type="radio" value="5.False" />C.destroy() <br />
+    <input id="javatest15" name="javatest15" type="radio" value="5.False" /> D.stop() <br />
+
+
+    <input type="button" onclick="doit()" value="click">
+</body>
+

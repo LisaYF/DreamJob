@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    
+}
+
+
+
+
+<img src="~/images/contact.jpg" height="100%" width="100%" style="position:absolute;z-index:-1000;opacity:0.5;" />
+
+<div class="container">
+    <h2>@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <address>
+        One Microsoft Way<br />
+        Redmond, WA 98052-6399<br />
+        <abbr title="Phone">P:</abbr>
+        425.555.0100
+    </address>
+
+    <address>
+        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    </address>
+    
+    <div>
+        <p><input id="fileInput1" name="fileInput1" type="file" /></p>
+        <p style="margin-top:5px;font-size:14px;font-weight:bold;">
+            <a href="javascript:if(true){$('#fileInput1').uploadifyUpload();}">uploading</a>
+        </p>
+        <p style="margin-top:5px;font-size:14px;font-weight:bold;"><span id="result"></span></p>
+    </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+        //上传
+        $('#fileInput1').uploadify({
+            'uploader': '/Content/uploadify.swf',
+            'script': '/Home/Import',
+            'folder': '/UploadFiles',
+            'cancelImg': '/Content/cancel.png',
+            'fileExt': '*.jpg',
+            'fileDesc': '*.jpg',
+            'sizeLimit': 1024 * 1024 * 4, //4M
+            'multi': true,
+            'onComplete': fun
+        });
+
+    });
+    function fun(event, queueID, fileObj, response, data) {
+        if (response != "") {
+            showInfo("成功上传" + response, true); //showInfo方法设置上传结果
+        }
+        else {
+            showInfo("文件上传出错！", false);
+        }
+    }
+
+</script>
